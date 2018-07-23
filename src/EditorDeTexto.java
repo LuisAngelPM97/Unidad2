@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class EditorDeTexto extends Application {
@@ -11,7 +12,7 @@ public class EditorDeTexto extends Application {
 
     @FXML
     void MenuAbiri(ActionEvent event) {
-
+        FileChooser fc = new FileChooser();
     }
 
     @FXML

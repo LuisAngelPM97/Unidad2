@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="472.0" prefWidth="349.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Practica016_JFoenix.Formularios">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="95.0" prefWidth="349.0" style="-fx-background-color: #313d4f;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+            <ImageView fitHeight="83.0" fitWidth="88.0" onMouseClicked="#mostrarUsuario" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-super-mario-48.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <ImageView fitHeight="83.0" fitWidth="69.0" onMouseClicked="#mostrarUbicacion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-marker-48.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+            <ImageView fitHeight="87.0" fitWidth="73.0" onMouseClicked="#mostrarEscuela" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-school-building-48.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+            <ImageView fitHeight="83.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-export-48.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="paneUsuario" layoutX="27.0" layoutY="146.0" prefHeight="358.0" prefWidth="349.0" style="-fx-background-color: #313d4f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="13.0" layoutY="27.0" text="Nombre(s):" textFill="WHITE" />
+            <Label layoutX="13.0" layoutY="63.0" text="Apellido Paterno:" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="101.0" text="Apellido Materno:" textFill="WHITE" />
+            <Label layoutX="13.0" layoutY="139.0" text="Sexo:" textFill="WHITE" />
+            <JFXTextField focusColor="#134da3" layoutX="134.0" layoutY="16.0" prefHeight="22.0" prefWidth="183.0" unFocusColor="#70737f" />
+            <JFXTextField focusColor="#134da3" layoutX="134.0" layoutY="52.0" prefHeight="22.0" prefWidth="183.0" unFocusColor="#70737f" />
+            <JFXTextField focusColor="#134da3" layoutX="134.0" layoutY="90.0" prefHeight="22.0" prefWidth="183.0" unFocusColor="#70737f" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="134.0" layoutY="137.0" text="Masculino" textFill="WHITE" unCheckedColor="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="244.0" layoutY="137.0" text="Femenino" textFill="WHITE" unCheckedColor="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="upUsuario" fitHeight="52.0" fitWidth="45.0" layoutX="23.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-sort-up-48%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneUbicacion" layoutX="7.0" layoutY="114.0" prefHeight="358.0" prefWidth="349.0" style="-fx-background-color: #313d4f;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label layoutX="31.0" layoutY="37.0" text="Calle:" textFill="WHITE" />
+            <Label layoutX="31.0" layoutY="84.0" text="Colonia:" textFill="WHITE" />
+            <Label layoutX="32.0" layoutY="131.0" text="Ciudad:" textFill="WHITE" />
+            <Label layoutX="35.0" layoutY="179.0" text="C.P:" textFill="WHITE" />
+            <JFXTextField focusColor="#134da3" layoutX="126.0" layoutY="33.0" prefHeight="22.0" prefWidth="183.0" />
+            <JFXTextField focusColor="#134da3" layoutX="126.0" layoutY="127.0" prefHeight="22.0" prefWidth="183.0" />
+            <JFXTextField focusColor="#134da3" layoutX="126.0" layoutY="80.0" prefHeight="22.0" prefWidth="183.0" />
+            <JFXTextField focusColor="#134da3" layoutX="126.0" layoutY="175.0" prefHeight="22.0" prefWidth="183.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="upUbicacion" fitHeight="52.0" fitWidth="45.0" layoutX="107.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-sort-up-48%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneEscuela" layoutX="9.0" layoutY="114.0" prefHeight="358.0" prefWidth="349.0" style="-fx-background-color: #313d4f;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="54.0" text="Grados obtenidos:" textFill="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="99.0" layoutY="93.0" text="Primaria." textFill="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="100.0" layoutY="130.0" text="Secundaria." textFill="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="101.0" layoutY="168.0" text="Preparatoria/Bachillerato." textFill="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="102.0" layoutY="206.0" text="Licenciatura." textFill="WHITE" />
+            <JFXCheckBox checkedColor="#134da3" layoutX="103.0" layoutY="243.0" text="Postgrado." textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="upEscuela" fitHeight="52.0" fitWidth="45.0" layoutX="184.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-sort-up-48%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneSalir" layoutX="10.0" layoutY="114.0" prefHeight="358.0" prefWidth="349.0" style="-fx-background-color: #313d4f;" AnchorPane.leftAnchor="0.0" />
+      <ImageView fx:id="upSalir" fitHeight="52.0" fitWidth="45.0" layoutX="265.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-sort-up-48%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
