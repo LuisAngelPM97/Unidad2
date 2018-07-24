@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333b47;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InicioSesion">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
@@ -22,9 +21,9 @@
             <Font name="Bell MT" size="24.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#868686" layoutX="406.0" layoutY="85.0" prefHeight="22.0" prefWidth="182.0" style="-fx-text-fill: GRAY;" text="Usuario" unFocusColor="RED" />
-      <JFXPasswordField focusColor="#868686" layoutX="406.0" layoutY="125.0" prefHeight="22.0" prefWidth="182.0" promptText="Contraseña" style="-fx-text-fill: Gray;" unFocusColor="RED" />
-      <JFXButton layoutX="406.0" layoutY="185.0" prefHeight="22.0" prefWidth="182.0" style="-fx-background-color: #ff0000; -fx-text-fill: White;" text="Conectar" textFill="WHITE" />
+      <JFXTextField focusColor="#868686" layoutX="406.0" layoutY="85.0" onAction="#usuario" prefHeight="22.0" prefWidth="182.0" style="-fx-text-fill: GRAY;" text="Usuario" unFocusColor="RED" />
+      <JFXPasswordField focusColor="#868686" layoutX="406.0" layoutY="125.0" onAction="#clave" prefHeight="22.0" prefWidth="182.0" promptText="Contraseña" style="-fx-text-fill: Gray;" unFocusColor="RED" />
+      <JFXButton layoutX="406.0" layoutY="185.0" onAction="#iniciaSesion" prefHeight="22.0" prefWidth="182.0" style="-fx-background-color: #ff0000; -fx-text-fill: White;" text="Conectar" textFill="WHITE" />
       <JFXButton layoutX="406.0" layoutY="231.0" style="-fx-text-fill: Gray;" text="Restaurar Contraseña" textFill="WHITE" />
       <JFXButton layoutX="539.0" layoutY="231.0" style="-fx-text-fill: Gray;" text="Ayuda" textFill="WHITE" />
       <ImageView fitHeight="102.0" fitWidth="60.0" layoutX="225.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">

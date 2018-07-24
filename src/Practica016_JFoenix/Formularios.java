@@ -89,6 +89,10 @@ public class Formularios extends Application {
             break;
         }
     }
+
+
+
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent layout = FXMLLoader.load(getClass().getResource("Formulario.fxml"));
